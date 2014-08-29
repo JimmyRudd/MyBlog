@@ -3,12 +3,12 @@ layout: default
 title:博客demo
 ---
 
-*** 博客标题 ***
+<h3> 博客标题 </h3>
 
-** 语法高亮 行数**
+<h2> 语法高亮 行数 </h2>
 
 <p> 
-*{% highlight ruby linenos %}
+{% highlight ruby linenos %}
 def show
   @widget = Widget(params[:id])
   respond_to do |format|
@@ -16,7 +16,7 @@ def show
     format.json { render json: @widget }
   end
 end
-{% endhighlight %}*
+{% endhighlight %}
 </p>
 
 <p>
