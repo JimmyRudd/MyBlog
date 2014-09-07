@@ -4,7 +4,6 @@ title: 博客demo
 ---
 <h3>{{ page.title }}</h3>
 <h2> 语法高亮 行数 </h2>
-<p>
 {% highlight ruby linenos %}
 def show
   @widget = Widget(params[:id])
@@ -14,5 +13,4 @@ def show
   end
 end
 {% endhighlight %}
-</p>
 <p>{{ page.date | date_to_string }}</p>
