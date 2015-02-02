@@ -37,20 +37,5 @@ title: 我的Blog
 
 <p>最新文章</p>
 
-<ul>
-    {% for post in site.posts %}
-      <li>{{ post.date | date_to_string }} <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-</ul>
-{% endhighlight %}
-
-<p><Strong>default.html</Strong>模板格式如下(head、foot根据实际需要在_includes下自行编写)</p>
-{% highlight ruby linenos %}
-<!DOCTYPE html>
- {% include head.html%}
-
-  {{ content }}
-
- {% include foot.html%}
-
+...
 {% endhighlight %}
