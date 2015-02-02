@@ -2,9 +2,7 @@
 layout: default
 title: demo
 ---
-
 <h2>{{ page.title }}</h2>
-
 {% highlight ruby linenos %}
 def show
   @widget = Widget(params[:id])
