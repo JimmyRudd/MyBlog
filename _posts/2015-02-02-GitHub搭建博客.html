@@ -1,0 +1,49 @@
+---
+layout: default
+title: 使用GitHub搭建个人博客
+---
+<h2>{{ page.title }}</h2>
+<h3>参考自：<a href="http://www.ruanyifeng.com/blog/2012/08/blogging_with_jekyll.html">阮一峰的网络日志</a></h3>
+<blockquote>
+<p><Strong>基本介绍</Strong></p>
+<p>github设计了Pages功能，允许用户自定义项目首页用来代替源码列表——所以<Strong>github Pages</Strong>可以认为是用户托管在github上的静态网页</p>
+<p> github可以提供模板，同时网页会经过<Strong>Jekyll</Strong>再处理</p>
+<p><Strong>注意!</Strong>github规定只有gh-pages分支中的页面，才会生成网页文件</p>
+</blockquote>
+<blockquote>
+<p><Strong>Jekyll的基本框架</Strong></p>
+<p>Jekyll是静态站点生成器，根据网页源码生成静态文件，提供模板、变量、插件等功能</p>
+<p>根目录下结构:</p>
+<p><Strong>_config.yml</Strong>配置文件</p>
+<p><Strong>_index.html</Strong>默认首页</p>
+<p><Strong>_layouts</Strong>模板目录，目录下创建一个default.html文件，作为Blog的默认模板</p>
+<p><Strong>_posts</Strong>blog文章目录，要注意文章命名如下:2014-09-06-helloworld.html,同时要包括yaml头</p>
+<p><Strong>注意</Strong>如果Jekyll没处理，请检测yaml头，或则直接复制正确的yaml头过来再修改内容</p>
+<p><Strong>_includes</Strong>库目录</p>
+</blockquote>
+<p><Strong>_config.yml</Strong>配置文件格式如下</p>
+<blockquote>
+{% highlight ruby linenos %}
+baseurl: /MyBlog
+{% endhighlight %}
+</blockquote>
+
+<p><Strong>index.html</Strong>默认首页格式如下</p>
+<blockquote>
+{% highlight ruby linenos %}
+---
+layout: default
+title: 我的Blog
+---
+
+<h2>{{ page.title }}</h2>
+
+<p>最新文章</p>
+
+<ul>
+    {% for post in site.posts %}
+      <li>{{ post.date | date_to_string }} <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+</ul>
+{% endhighlight %}
+</blockquote>
