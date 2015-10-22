@@ -367,7 +367,8 @@ Full-Width Styles
 }
 
 #head_menu { 
-font:12px verdana, arial, sans-serif; 
+font:36px verdana, arial, sans-serif; 
+padding-bottom: 0px;
 }
 #head_menu, #head_menu li {
 list-style:none;
