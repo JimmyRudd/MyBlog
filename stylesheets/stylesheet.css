@@ -366,6 +366,35 @@ Full-Width Styles
   background: #212121;
 }
 
+#head_menu { 
+font:12px verdana, arial, sans-serif; 
+}
+#head_menu, #head_menu li {
+list-style:none;
+padding:0;
+margin:0;
+}
+#head_menu li { 
+float:left; 
+}
+#head_menu li a {
+display:block;
+
+padding:8px 50px;
+background:#3A4953;
+color:#fff;
+text-decoration:none;
+border-right:1px solid #000;
+}
+#head_menu li a:hover {
+background:#146C9C;
+color:#fff;
+text-decoration:none;
+border-right:1px solid #000;
+}
+#head_menu li a.last {
+border-right:0; 
+}
 
 
 /*******************************************************************************
