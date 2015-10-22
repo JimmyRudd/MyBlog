@@ -380,9 +380,9 @@ float:left;
 }
 #head_menu li a {
 display:block;
-background:#3A4953;
+background:#212121;
 color:#fff;
-font-size: 36px;
+font-size: 24px;
 text-decoration:none;
 border-right:1px solid #000;
 }
