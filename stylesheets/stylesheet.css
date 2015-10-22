@@ -362,12 +362,12 @@ Full-Width Styles
   padding-top: 40px;
 }
 
-#footer_wrap {
+#footer_wrap {F
   background: #212121;
 }
 
 #head_menu { 
-font:36px verdana, arial, sans-serif; 
+font:24px verdana, arial, sans-serif; 
 padding-bottom: 0px;
 }
 #head_menu, #head_menu li {
@@ -380,14 +380,12 @@ float:left;
 }
 #head_menu li a {
 display:block;
-background:#212121;
 color:#fff;
 font-size: 24px;
 text-decoration:none;
 border-right:1px solid #000;
 }
 #head_menu li a:hover {
-background:#146C9C;
 color:#fff;
 text-decoration:none;
 border-right:1px solid #000;
