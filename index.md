@@ -3,11 +3,9 @@ layout: default
 title: 吉米杂货铺
 ---
 
-<h2>{{ page.title }}</h2>
+##目录
 
-<p>最新文章</p>
-
-<ul>
+<ul class="bl-vernav vernav-level">
     {% for post in site.posts %}
       <li>{{ post.date | date_to_string }} <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
     {% endfor %}

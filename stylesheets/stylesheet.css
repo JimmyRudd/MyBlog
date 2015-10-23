@@ -254,6 +254,19 @@ form {
   padding: 20px;
 }
 
+.bl-vernav li{ border-bottom:1px solid #ddd; margin-bottom:-1px;padding-top:1px;}
+.bl-vernav a{ display:block; height:20px; line-height:20px; padding:10px 16px;}
+.bl-vernav a:hover{ background:#F8F8F8;text-decoration:none;}
+/*.bl-vernav .cur a{ background:#428BCA; color:#fff;}*/
+ 
+.bl-vernav-ord{ border:1px solid #ddd;}
+ 
+.vernav-level li li{ border-left:none;border-right:none;}
+.vernav-level li li a{ padding-left:40px;}
+.vernav-level .cur .one{ background:#F8F8F8;  }
+.vernav-level li .cur a{ background:#F8F8F8; }
+
+
 /*******************************************************************************
 Full-Width Styles
 *******************************************************************************/
