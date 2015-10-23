@@ -29,6 +29,7 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
+
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
@@ -67,7 +68,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 36px;
+  font-size: 48px;
   font-weight: 700;
 }
 
@@ -136,7 +137,7 @@ strong {
 img {
   position: relative;
   margin: 0 auto;
-  max-width: 739px;
+  max-width: 67%;
   padding: 5px;
   margin: 10px 0 10px 0;
   border: 1px solid #ebebeb;
@@ -277,7 +278,7 @@ Full-Width Styles
 
 .inner {
   position: relative;
-  max-width: 640px;
+  max-width: 67%;
   padding: 20px 10px;
   margin: 0 auto;
 }
@@ -422,8 +423,8 @@ Small Device Styles
   }
 
   .inner {
-    min-width: 320px;
-    max-width: 480px;
+    min-width: 67%;
+    max-width: 67%;
   }
 
   #project_title {
@@ -455,8 +456,8 @@ Small Device Styles
   }
 
   code, pre {
-    min-width: 320px;
-    max-width: 480px;
+    min-width: 67%;
+    max-width: 67%;
     font-size: 11px;
   }
 
